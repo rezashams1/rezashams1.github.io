@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reza Shams - Senior Software Engineer</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' fill='%23667eea'><path d='M16 2C8.3 2 2 8.3 2 16s6.3 14 14 14 14-6.3 14-14S23.7 2 16 2zm-2 20l-6-6 1.4-1.4L14 19.2l8.6-8.6L24 12l-10 10z'/></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Reza Shams</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                <div class="toggle-track">
+                    <div class="toggle-thumb">
+                        <i class="fas fa-moon moon-icon"></i>
+                        <i class="fas fa-sun sun-icon"></i>
+                    </div>
+                </div>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="profile-image-container">
+                    <div class="profile-ring"></div>
+                    <img src="avatar.jpeg?w=400&h=400&fit=crop&crop=face" alt="Reza Shams" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hello, I'm</span>
+                        <span class="name">Reza Shams</span>
+                        <span class="title-accent">Senior Software Engineer</span>
+                    </h1>
+                    <p class="hero-description">
+                        Dedicated to architecting scalable software solutions and delivering high-performance applications 
+                        that drive business value and user satisfaction.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>My Story</h3>
+                        <p>
+                            Software engineer with over 8 years of experience developing and maintaining scalable web applications. Skilled in TypeScript, JavaScript, Node.js, NestJS, React, Next.js, and working with both relational and NoSQL databases. Experienced in designing robust software architectures, leading development from concept to deployment, and improving existing codebases for better performance, scalability, and security. Experienced in guiding underperforming teams toward improved productivity and technical excellence through strategic leadership and mentorship.
+                        </p>
+                        <p>
+                            I have <strong>M.Sc.</strong> in <strong>Software Engineering</strong> from <strong>Azad University of Tehran</strong> and speak <strong>English</strong>, <strong>Turkish</strong>, and <strong>Farsi</strong> Fluently.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="29">0</div>
+                        <div class="stat-label">Years Old</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" data-target="8">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Skills</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cog"></i>
+                            <span>Rust</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-layer-group"></i>
+                            <span>Redux</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-sass"></i>
+                            <span>Sass</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>Webpack</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>NestJS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-exchange-alt"></i>
+                            <span>REST API</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>GraphQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-memory"></i>
+                            <span>Redis</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-vials"></i>
+                            <span>Unit Test</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-microsoft"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-sync"></i>
+                            <span>CI/CD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-file-code"></i>
+                            <span>Swagger</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional credentials and achievements</p>
+            </div>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="cert-provider">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM" class="provider-logo">
+                            <span class="provider-name">IBM</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Developing Back-End Apps with Node.js and Express</h3>
+                        <div class="cert-details">
+                            <div class="cert-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Issued Sep 2023</span>
+                            </div>
+                            <div class="cert-id">
+                                <i class="fas fa-certificate"></i>
+                                <span>Credential ID: 8VXZD8HVND5M</span>
+                            </div>
+                        </div>
+                        <a href="https://coursera.org/verify/8VXZD8HVND5M" target="_blank" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Verify Certificate</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="certification-card">
+                    <div class="cert-header">
+                        <div class="cert-icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="cert-provider">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg" alt="Meta" class="provider-logo">
+                            <span class="provider-name">Meta</span>
+                        </div>
+                    </div>
+                    <div class="cert-content">
+                        <h3>Advanced React</h3>
+                        <div class="cert-details">
+                            <div class="cert-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Issued Aug 2023</span>
+                            </div>
+                            <div class="cert-id">
+                                <i class="fas fa-certificate"></i>
+                                <span>Credential ID: FNC6FZT6TYKE</span>
+                            </div>
+                        </div>
+                        <a href="https://coursera.org/verify/FNC6FZT6TYKE" target="_blank" class="verify-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span>Verify Certificate</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" onclick="openImageSlider('project1')">
+                    <div class="project-image">
+                        <img src="projects/badnava/1.png?w=600&h=400&fit=crop" alt="BADNAVA E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="view-gallery">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BADNAVA E-Commerce Platform</h3>
+                        <div class="project-description">
+                            <p class="description-short">A sophisticated online fine jewelry marketplace built with Next.js frontend and NestJS backend, both powered by TypeScript...</p>
+                            <p class="description-full">A sophisticated online fine jewelry marketplace built with Next.js frontend and NestJS backend, both powered by TypeScript. Features include Redis message-brokering for real-time updates, optimized PostgreSQL database for high-performance queries, OAuth authentication, and mobile-responsive design. The platform includes comprehensive vendor and admin dashboards with advanced features like inventory management, order processing, and analytics. Designed to handle thousands of concurrent users seamlessly with robust scalability and performance optimizations.</p>
+                            <button class="read-more-btn" onclick="toggleDescription(event, this)"><i class="fas fa-chevron-down"></i> <span class="btn-text">Read More</span></button>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">OAuth</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openImageSlider('project2')">
+                    <div class="project-image">
+                        <img src="projects/vboom/1.png?w=600&h=400&fit=crop" alt="vBoomCloud SaaS Provider">
+                        <div class="project-overlay">
+                            <div class="view-gallery">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>vBoomCloud SaaS Provider</h3>
+                        <div class="project-description">
+                            <p class="description-short">A comprehensive SaaS platform built with Next.js frontend and NestJS backend, both powered by TypeScript...</p>
+                            <p class="description-full">A comprehensive SaaS platform built with Next.js frontend and NestJS backend, both powered by TypeScript. The Next.js frontend features Redux state management, internationalization (i18n), Material-UI design system, comprehensive unit tests, and real-time Socket.IO integration. The NestJS backend includes Redis queue management, PostgreSQL database, OAuth authentication, rich Swagger API documentation, i18n support, real-time WebSocket communication, and job scheduling capabilities. The entire platform is deployed with automated CI/CD pipelines using Jenkins, ensuring reliable and efficient deployment processes.</p>
+                            <button class="read-more-btn" onclick="toggleDescription(event, this)"><i class="fas fa-chevron-down"></i> <span class="btn-text">Read More</span></button>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Material-UI</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Redis</span>
+                            <span class="tech-tag">Socket.IO</span>
+                            <span class="tech-tag">OAuth</span>
+                            <span class="tech-tag">Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openImageSlider('project3')">
+                    <div class="project-image">
+                        <img src="projects/memargram/0.png?w=600&h=400&fit=crop" alt="Memargram">
+                        <div class="project-overlay">
+                            <div class="view-gallery">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Memargram</h3>
+                        <div class="project-description">
+                            <p class="description-short">A social platform for architects to purchase tutorials, share posts, and connect with fellow architects...</p>
+                            <p class="description-full">A social platform for architects to purchase tutorials, share posts, and connect with fellow architects. Built with Next.js frontend featuring Redux state management, internationalization (i18n) for multilingual support, optimized loading for social media content, Sentry error handling, and light/dark theme switching. The platform is backed by a custom PHP Laravel backend that I developed, providing robust API endpoints, user authentication, payment processing for tutorial purchases, and social networking features. The entire system is designed to create a vibrant community where architects can learn, share their work, and build professional connections.</p>
+                            <button class="read-more-btn" onclick="toggleDescription(event, this)"><i class="fas fa-chevron-down"></i> <span class="btn-text">Read More</span></button>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">i18n</span>
+                            <span class="tech-tag">Sentry</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Websocket</span>
+                            <span class="tech-tag">Light/Dark</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openImageSlider('project4')">
+                    <div class="project-image">
+                        <img src="projects/honeybar/1.png?w=600&h=400&fit=crop" alt="Honeybar">
+                        <div class="project-overlay">
+                            <div class="view-gallery">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Honeybar</h3>
+                        <div class="project-description">
+                            <p class="description-short">An online e-commerce platform for organic products with a rich-featured admin dashboard...</p>
+                            <p class="description-full">An online e-commerce platform for organic products with a rich-featured admin dashboard. Built with React.js frontend featuring Redux Toolkit for state management, internationalization (i18n) for multilingual support, optimized product catalog with advanced filtering and search capabilities, and responsive design for seamless mobile shopping experience. The platform includes a comprehensive admin dashboard with inventory management, order processing, customer analytics, and sales reporting. The entire system is designed to provide a modern, user-friendly shopping experience while giving administrators powerful tools to manage their organic products business effectively.</p>
+                            <button class="read-more-btn" onclick="toggleDescription(event, this)"><i class="fas fa-chevron-down"></i> <span class="btn-text">Read More</span></button>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">Redux Toolkit</span>
+                            <span class="tech-tag">i18n</span>
+                            <span class="tech-tag">Inventory Management</span>
+                            <span class="tech-tag">Analytics</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openImageSlider('project5')">
+                    <div class="project-image">
+                        <img src="projects/jabalad/1.jpg?w=600&h=400&fit=crop" alt="Jabalad Accomodation">
+                        <div class="project-overlay">
+                            <div class="view-gallery">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Jabalad Accommodation</h3>
+                        <div class="project-description">
+                            <p class="description-short">A comprehensive travel platform offering accommodation booking, social media features, and travel planning tools...</p>
+                            <p class="description-full">A comprehensive travel platform offering accommodation booking, social media features, and travel planning tools. Built with React.js frontend and NestJS backend, both using TypeScript for enhanced code quality and maintainability. The platform features Redux for state management, internationalization (i18n) for multilingual support, and SCSS for advanced styling. Users can book hotels, tours, and flight tickets while also sharing travel stories and connecting with other travelers through the integrated social media features. The platform includes an extensive dataset of cities and landmarks to help travelers discover the best destinations and plan their trips effectively. The entire system provides a modern, user-friendly experience for both travel booking and social interaction within the travel community.</p>
+                            <button class="read-more-btn" onclick="toggleDescription(event, this)"><i class="fas fa-chevron-down"></i> <span class="btn-text">Read More</span></button>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">NestJS</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Redux</span>
+                            <span class="tech-tag">i18n</span>
+                            <span class="tech-tag">SCSS</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Social Media</span>
+                            <span class="tech-tag">Travel API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" onclick="openImageSlider('project6')">
+                    <div class="project-image">
+                        <img src="projects/memargram-mobile/1.jpg?w=600&h=400&fit=crop" alt="Memeargram Mobile Edition">
+                        <div class="project-overlay">
+                            <div class="view-gallery">
+                                <i class="fas fa-images"></i>
+                                <span>View Gallery</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Memeargram Mobile Edition</h3>
+                        <div class="project-description">
+                            <p class="description-short">Same as Memargram, but for mobile devices...</p>
+                            <p class="description-full">Same as Memargram, but for mobile devices. Optimized for mobile devices and tablets.</p>
+                            <button class="read-more-btn" onclick="toggleDescription(event, this)"><i class="fas fa-chevron-down"></i> <span class="btn-text">Read More</span></button>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">React.js</span>
+                            <span class="tech-tag">Mobile-First</span>
+                            <span class="tech-tag">Responsive Design</span>
+                            <span class="tech-tag">iOS & Android</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2024 - Present</div>
+                        <h3>Technical Team Lead</h3>
+                        <h4>Badnava - Doha, Qatar</h4>
+                        <p>• Led and mentored a cross-functional technical team, implementing <strong>Agile</strong> methodologies and establishing coding best practices<br/><br/>
+                        • Spearheaded strategic technical decisions and architecture planning, guiding the development of products that propelled the startup to <strong>top 1%</strong> recognition in Dubai DIFC and Qatar<br/><br/>
+                        • Managed and optimized scalable <strong>AWS</strong> infrastructure including <strong>EC2</strong>, <strong>Elastic Beanstalk</strong>, <strong>ElastiCache</strong>, and <strong>RDS</strong> across 10 services in multiple deployment stages<br/><br/>
+                        • Established comprehensive <strong>DevOps</strong> practices with <strong>Docker</strong> containerization and fully automated <strong>CI/CD</strong> pipelines, achieving deployment downtime under 2 seconds<br/><br/>
+                        • Translated complex business requirements into detailed technical specifications and development roadmaps<br/><br/>
+                        • Drove team performance and technical excellence through strategic mentorship and leadership initiatives</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2023 - Feb 2024</div>
+                        <h3>Senior Back-End Engineer</h3>
+                        <h4>Badnava - Doha, Qatar</h4>
+                        <p>• Architected and developed a robust <strong>NestJS</strong> webservice from ground up, achieving a <strong>500% increase</strong> in unique monthly visitors<br/><br/>
+                        • Designed and implemented scalable backend architecture with high-performance APIs and microservices<br/><br/>
+                        • Created comprehensive API documentation using <strong>Swagger</strong>, enabling seamless team collaboration and improved developer experience<br/><br/>
+                        • Built and configured initial <strong>AWS</strong> infrastructure foundation including <strong>EC2</strong>, <strong>RDS</strong>, and <strong>ElastiCache</strong> setup<br/><br/>
+                        • Established core <strong>DevOps</strong> workflows and <strong>Docker</strong> containerization strategies for the development team<br/><br/>
+                        • Delivered high-quality backend solutions that directly contributed to the company's rapid growth and market success</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Apr 2022 - Oct 2023</div>
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Arkayol - Tehran, Iran</h4>
+                        <p>• Migrated entire codebase to <strong>TypeScript</strong> with strict typing, significantly improving code maintainability and security<br/><br/>
+                        • Enhanced application performance using <strong>40+ Node.js</strong> high-performance <strong>Redis</strong> queues and background task processing<br/><br/>
+                        • Built responsive user interfaces with <strong>React</strong> and <strong>Sass</strong>, featuring multilingual support, real-time <strong>WebSocket</strong> transactions, and robust error boundaries across 2 codebases<br/><br/>
+                        • Mentored <strong>5 team members</strong> through code reviews, best practices guidance, and daily <strong>Scrum</strong> meetings<br/><br/>
+                        • Refactored and optimized existing website using <strong>Next.js</strong>, delivering improved performance and user experience<br/><br/>
+                        • Established comprehensive testing strategy with <strong>Jest</strong>, implementing <strong>80+ unit and integration tests</strong> to ensure code reliability<br/><br/>
+                        • Developed a unified <strong>JavaScript SDK</strong> to streamline integration across 6 different product offerings<br/><br/>
+                        • Optimized <strong>MySQL</strong> database performance achieving <strong>3x speed improvement</strong> through strategic indexing and query optimization</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2013 - Nov 2020</div>
+                        <h3>Software Engineer</h3>
+                        <h4>Binarleap · Self-employed - Tehran, Iran</h4>
+                        <p>• Engineered high-performance data processing systems handling <strong>5+ million records</strong> using optimized <strong>PHP</strong> and <strong>SQL</strong> with strategic indexing<br/><br/>
+                        • Successfully delivered diverse software solutions to <strong>individual and enterprise clients</strong>, managing full project lifecycle<br/><br/>
+                        • Modernized legacy codebases by implementing <strong>TypeScript</strong>, achieving better code integrity, maintainability, and scalability<br/><br/>
+                        • Created pixel-perfect user interfaces using <strong>React</strong> based on <strong>Figma</strong> designs, with multilingual support and real-time transaction capabilities across 2 applications<br/><br/>
+                        • Developed comprehensive <strong>ERP software</strong> that automated manual processes and accelerated R&D product development<br/><br/>
+                        • Translated <strong>10+ complex business requirements</strong> into robust, production-ready software solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and work together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p class="contact-value">rezashams.work@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p class="contact-value">+98 903 817 5538</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/rezashams1" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/rezashams1" class="social-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/reza.shams.1" class="social-link" title="Instagram" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Reza Shams. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of coffee</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Slider Modal -->
+    <div id="imageSliderModal" class="slider-modal">
+        <div class="slider-container">
+            <div class="slider-header">
+                <h3 id="sliderTitle">Project Gallery</h3>
+                <button class="close-slider" onclick="closeImageSlider()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="slider-content">
+                <button class="slider-nav prev" onclick="previousSlide()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="slider-wrapper">
+                    <div class="slide-track" id="slideTrack">
+                        <!-- Slides will be dynamically inserted here -->
+                    </div>
+                </div>
+                <button class="slider-nav next" onclick="nextSlide()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="slider-indicators" id="sliderIndicators">
+                <!-- Indicators will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
