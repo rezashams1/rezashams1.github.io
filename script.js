@@ -264,20 +264,66 @@ document.addEventListener('DOMContentLoaded', function() {
     // Navigation Elements
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
+    const navMenuOverlay = document.getElementById('nav-menu-overlay');
     const navbar = document.getElementById('navbar');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Mobile Menu Toggle
-    hamburger.addEventListener('click', function() {
-        hamburger.classList.toggle('active');
-        navMenu.classList.toggle('active');
-    });
-    
-    // Close mobile menu when clicking on a link
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+    // Clean Mobile Menu Toggle
+    function toggleMobileMenu() {
+        const isActive = hamburger.classList.contains('active');
+        
+        if (!isActive) {
+            // Opening menu - prevent any overflow during animation
+            document.body.style.overflowX = 'hidden';
+            document.body.style.overflowY = 'hidden';
+            hamburger.classList.add('active');
+            navMenu.classList.add('active');
+            navMenuOverlay.classList.add('active');
+        } else {
+            // Closing menu
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
+            navMenuOverlay.classList.remove('active');
+            document.body.style.overflowX = '';
+            document.body.style.overflowY = '';
+        }
+    }
+    
+    // Hamburger click handler
+    hamburger.addEventListener('click', toggleMobileMenu);
+    
+    // Close menu when clicking on overlay
+    navMenuOverlay.addEventListener('click', toggleMobileMenu);
+    
+    // Close mobile menu when clicking on a link (with enhanced animation)
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            if (navMenu.classList.contains('active')) {
+                toggleMobileMenu();
+            }
+        });
+    });
+    
+    // Close menu on window resize if open (prevents issues on orientation change)
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu.classList.contains('active')) {
+            toggleMobileMenu();
+        }
+    });
+    
+    // Enhanced menu item hover effects (for desktop)
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            // Add ripple effect on hover for desktop
+            if (window.innerWidth > 768) {
+                this.style.transform = 'translateY(-2px)';
+            }
+        });
+        
+        link.addEventListener('mouseleave', function() {
+            if (window.innerWidth > 768) {
+                this.style.transform = 'translateY(0)';
+            }
         });
     });
     
@@ -682,9 +728,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Keyboard navigation
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') {
-            // Close mobile menu if open
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            // Close mobile menu if open using the fancy toggle function
+            if (hamburger.classList.contains('active')) {
+                toggleMobileMenu();
+            }
         }
         
         // Arrow key navigation through sections
