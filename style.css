@@ -1717,6 +1717,7 @@ body.light-mode .social-link:hover span {
         z-index: 999;
         overflow: hidden; /* Prevent any content from extending outside */
         padding: 1rem 0;
+        gap: 1rem;
     }
 
     .nav-menu.active {
@@ -1728,7 +1729,11 @@ body.light-mode .social-link:hover span {
         opacity: 0;
         transform: translateX(20px); /* Reduced distance to prevent overflow */
         transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        margin: 0.2rem 0;
+        margin: 0; /* No margin between items for tight spacing */
+    }
+
+    .nav-menu .nav-item:first-child {
+        margin-top: 1rem;
     }
 
     .nav-menu.active .nav-item {
@@ -1748,7 +1753,7 @@ body.light-mode .social-link:hover span {
     /* Clean menu link styling */
     .nav-menu .nav-link {
         display: block;
-        padding: 1rem 1.2rem;
+        padding: 0.8rem 1.2rem; /* Reduced vertical padding for tighter spacing */
         margin: 0 1.2rem;
         color: var(--text-primary);
         text-decoration: none;
@@ -2054,6 +2059,11 @@ body.light-mode .social-link:hover span {
     .nav-menu {
         width: 280px;
         padding: 0.5rem 0;
+        gap: 1rem;
+    }
+
+    .nav-menu .nav-item:first-child {
+        margin-top: 1rem;
     }
 
     /* Even more compact for very small mobile */
