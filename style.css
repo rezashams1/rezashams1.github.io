@@ -1735,26 +1735,73 @@ body.light-mode .social-link:hover span {
         transform: translateY(-8px) rotate(-45deg);
     }
     
+    /* Hero section adjustments for mobile */
+    .hero {
+        padding: 8rem 0 2rem 0; /* More top padding to move content down from menu */
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Smaller title */
+    }
+    
+    .greeting {
+        font-size: 1.1rem; /* Smaller greeting */
+    }
+    
+    .title-accent {
+        font-size: 1.4rem; /* Smaller accent title */
+    }
+    
+    .hero-description {
+        font-size: 1rem; /* Smaller description */
+        margin-bottom: 1.5rem;
     }
     
     .section-title {
-        font-size: 2.5rem;
+        font-size: 2rem; /* Smaller section titles */
     }
     
     .profile-image-container {
-        width: 250px;
-        height: 250px;
+        width: 200px; /* Smaller avatar */
+        height: 200px;
+        margin-bottom: 1rem; /* Add spacing below avatar */
+    }
+    
+    /* Adjust profile effects for smaller avatar */
+    .profile-ring {
+        top: -15px;
+        left: -15px;
+        right: -15px;
+        bottom: -15px;
+        border-width: 2px;
+    }
+    
+    .profile-glow {
+        top: -25px;
+        left: -25px;
+        right: -25px;
+        bottom: -25px;
+    }
+    
+    /* Reduce float animation intensity on mobile */
+    @keyframes profileFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
     }
     
     .hero-content {
-        gap: 2rem;
+        gap: 1.5rem; /* Tighter spacing */
     }
     
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 0.8rem; /* Smaller gap between buttons */
+    }
+    
+    .btn {
+        padding: 0.7rem 1.4rem; /* Smaller buttons */
+        font-size: 0.9rem;
     }
     
     .projects-grid {
@@ -1910,21 +1957,91 @@ body.light-mode .social-link:hover span {
         padding: 0 1rem;
     }
     
+    /* Even more compact for very small mobile */
+    .hero {
+        padding: 7rem 0 1.5rem 0; /* More compact but still away from menu */
+    }
+    
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.6rem; /* Even smaller title */
+    }
+    
+    .greeting {
+        font-size: 0.95rem; /* Smaller greeting */
+    }
+    
+    .title-accent {
+        font-size: 1.1rem; /* Smaller accent title */
+    }
+    
+    .hero-description {
+        font-size: 0.9rem; /* Smaller description */
+        margin-bottom: 1.2rem;
+        padding: 0 0.5rem; /* Add side padding */
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.7rem; /* Smaller section titles */
     }
     
     .profile-image-container {
-        width: 200px;
-        height: 200px;
+        width: 160px; /* Much smaller avatar */
+        height: 160px;
+        margin-bottom: 1rem;
+    }
+    
+    /* Adjust profile effects for much smaller avatar */
+    .profile-ring {
+        top: -12px;
+        left: -12px;
+        right: -12px;
+        bottom: -12px;
+        border-width: 2px;
+    }
+    
+    .profile-glow {
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        bottom: -20px;
+    }
+    
+    /* Very subtle float animation for very small mobile */
+    @keyframes profileFloat {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+    }
+    
+    .hero-content {
+        gap: 1.2rem; /* Very tight spacing */
     }
     
     .btn {
-        padding: 0.8rem 1.5rem;
+        padding: 0.6rem 1.2rem; /* Even smaller buttons */
+        font-size: 0.8rem;
+    }
+    
+    .hero-buttons {
+        gap: 0.6rem; /* Tighter button spacing */
+    }
+    
+    /* Make other content smaller too */
+    .section-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-card {
+        padding: 1.2rem;
+    }
+    
+    .about-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .about-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
     }
     
     .skill-items {
