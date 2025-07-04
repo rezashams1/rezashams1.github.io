@@ -112,32 +112,32 @@ const projectImages = {
     project6: {
         title: 'Memeargram Mobile Edition',
         images: [
-            'projects/memargram-mobile/1.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/2.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/3.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/4.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/5.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/6.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/7.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/8.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/9.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/10.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/11.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/12.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/13.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/14.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/15.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/16.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/17.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/18.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/19.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/20.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/21.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/22.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/23.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/24.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/25.jpg?w=800&h=600&fit=crop',
-            'projects/memargram-mobile/26.jpg?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/1.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/2.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/3.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/4.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/5.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/6.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/7.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/8.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/9.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/10.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/11.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/12.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/13.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/14.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/15.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/16.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/17.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/18.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/19.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/20.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/21.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/22.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/23.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/24.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/25.JPG?w=800&h=600&fit=crop',
+            'projects/memargram-mobile/26.JPG?w=800&h=600&fit=crop',
         ]
     }
 };
@@ -539,7 +539,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const originalText = nameElement.textContent;
         nameElement.textContent = '';
-        nameElement.style.borderRight = '2px solid #667eea';
+        // Removed cursor line effect
         
         let i = 0;
         function type() {
@@ -547,12 +547,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 nameElement.textContent += originalText.charAt(i);
                 i++;
                 setTimeout(type, 100);
-            } else {
-                // Remove cursor after typing is complete
-                setTimeout(() => {
-                    nameElement.style.borderRight = 'none';
-                }, 1000);
             }
+            // No cursor removal needed since no cursor is added
         }
         
         // Start typing after a delay
