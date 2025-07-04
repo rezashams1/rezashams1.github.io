@@ -62,6 +62,8 @@ body {
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
     transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    contain: layout style paint;
+    will-change: background-position;
 }
 
 @keyframes gradientShift {
@@ -75,6 +77,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    contain: layout style paint;
 }
 
 .shape {
@@ -83,6 +86,9 @@ body {
     opacity: 0.1;
     animation: float 20s infinite linear;
     transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    will-change: transform;
+    backface-visibility: hidden;
+    contain: layout style paint;
 }
 
 body.light-mode .shape {
@@ -1547,8 +1553,6 @@ body.light-mode .social-link:hover span {
     color: #ffffff !important;
 }
 
-
-
 /* Footer */
 .footer {
     background: var(--bg-secondary);
@@ -1628,6 +1632,56 @@ body.light-mode .social-link:hover span {
 }
 
 @media (max-width: 768px) {
+    /* Ensure no x-overflow during animations */
+    html, body {
+        overflow-x: hidden !important;
+    }
+    
+    /* Constrain floating shapes on mobile to prevent overflow */
+    .floating-shapes {
+        overflow: hidden;
+        contain: layout style paint;
+    }
+    
+    /* Adjust shape positions and sizes for mobile to prevent edge overflow */
+    .shape-1 {
+        left: 5%;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .shape-2 {
+        left: 70%;
+        width: 80px;
+        height: 80px;
+    }
+    
+    .shape-3 {
+        left: 60%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .shape-4 {
+        left: 15%;
+        width: 70px;
+        height: 70px;
+    }
+    
+    .shape-5 {
+        left: 45%;
+        width: 55px;
+        height: 55px;
+    }
+    
+    /* Reduce animation intensity on mobile to prevent edge overflow */
+    @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg) translateZ(0); }
+        33% { transform: translateY(-20px) rotate(120deg) translateZ(0); }
+        66% { transform: translateY(20px) rotate(240deg) translateZ(0); }
+        100% { transform: translateY(0px) rotate(360deg) translateZ(0); }
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1803,6 +1857,51 @@ body.light-mode .social-link:hover span {
 }
 
 @media (max-width: 480px) {
+    /* Stricter overflow prevention for very small screens */
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw;
+    }
+    
+    /* Further constrain shapes on very small mobile screens */
+    .shape-1 {
+        left: 3%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .shape-2 {
+        left: 65%;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .shape-3 {
+        left: 55%;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .shape-4 {
+        left: 10%;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .shape-5 {
+        left: 40%;
+        width: 40px;
+        height: 40px;
+    }
+    
+    /* Even more conservative animation for very small screens */
+    @keyframes float {
+        0% { transform: translateY(0px) rotate(0deg) translateZ(0); }
+        33% { transform: translateY(-15px) rotate(90deg) translateZ(0); }
+        66% { transform: translateY(15px) rotate(180deg) translateZ(0); }
+        100% { transform: translateY(0px) rotate(270deg) translateZ(0); }
+    }
+
     .container {
         padding: 0 1rem;
     }
